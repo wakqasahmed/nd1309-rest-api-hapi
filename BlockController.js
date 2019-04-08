@@ -49,7 +49,7 @@ class BlockController {
                 self.blocks.push(blockAux);
 
                 console.log(self.blocks);
-                return `The block has been added successfully with data: ${body}`;
+                return self.blocks[self.blocks.length-1];
             }
         });
     }
